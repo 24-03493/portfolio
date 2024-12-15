@@ -1,0 +1,220 @@
+/* General Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Arial', sans-serif;
+  line-height: 1.6;
+  background-color: #f9f9f9;
+  color: #333;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+/* Header */
+header {
+  background-color: #d32f2f;
+  color: white;
+  padding: 2rem 1rem;
+  text-align: center;
+}
+
+.school-logo {
+  position: absolute;
+  top: 20px;
+  left: 230px;
+  width: 80px; /* Adjust the size of the logo */
+  height: auto; /* Maintains the aspect ratio */
+}
+
+.profile-pic {
+  display: block;
+  margin: 0 auto;
+  width: 150px;
+  height: 150px;
+  border-radius: 50%; /* Makes it circular */
+  border: 3px solid #d32f2f; /* Adds a red border */
+}
+
+header h1 {
+  font-size: 2.5rem;
+  font-weight: bold;
+}
+
+header p {
+  font-size: 1.2rem;
+  margin-top: 0.5rem;
+}
+
+/* Main Content */
+main {
+  flex: 1;
+  padding: 2rem 1rem;
+}
+
+.container {
+  max-width: 900px;
+  margin: auto;
+}
+
+.about,
+.contact {
+  margin-bottom: 2rem;
+  padding: 1rem;
+  background: #fff;
+  border-left: 5px solid #d32f2f;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.about h2,
+.contact h2 {
+  color: #d32f2f;
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.about p,
+.contact p {
+  font-size: 1rem;
+}
+
+.contact a {
+  color: #d32f2f;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.contact a:hover {
+  text-decoration: underline;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  background: #333;
+  color: white;
+  padding: 1rem 0;
+  font-size: 0.9rem;
+}
+
+/* Style for the logo and buttons container */
+.logo-and-buttons {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+/* Style for the school logo */
+.school-logo {
+  width: 60px;
+  height: auto;
+}
+
+/* Style for the buttons */
+.buttons {
+  display: flex;
+  gap: 5px; /* Space between buttons */
+}
+
+.nav-button {
+  padding: 10px 15px;
+  font-size: 14px;
+  color: white;
+  background-color: #d32f2f;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 1s;
+}
+
+.nav-button:hover {
+  background-color: #b71c1c; /* Darker red on hover */
+}
+
+
+/* Home Section Styles */
+.home {
+  padding: 2rem 1rem;
+  background-color: #fefefe;
+}
+
+.home h2 {
+  text-align: center;
+  color: #d32f2f;
+  margin-bottom: 1.5rem;
+}
+
+.columns {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.column {
+  flex: 1;
+  background: #fff;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 1rem;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.column h3 {
+  color: #d32f2f;
+  margin-bottom: 0.5rem;
+}
+
+.column p {
+  font-size: 0.9rem;
+  color: #555;
+  line-height: 1.5;
+}
+
+/* Ensure the columns are responsive */
+@media (max-width: 768px) {
+  .columns {
+    flex-direction: column;
+  }
+
+  .column {
+    margin-bottom: 20px;
+  }
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+.nav-button {
+  text-decoration: none;
+  padding: 10px 15px;
+  font-size: 14px;
+  color: white;
+  background-color: #d32f2f;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.nav-button:hover {
+  background-color: #b71c1c; /* Darker red on hover */
+}
+
+.custom-pre {
+  font-family: 'Arial', sans-serif; /* Change font to Arial */
+  font-size: 16px; /* Adjust font size */
+  color: #333; /* Change text color */
+  background-color: #f9f9f9; /* Add background color */
+  border: 1px solid #ccc; /* Add a border */
+  border-radius: 5px; /* Optional: round corners */
+  padding: 10px; /* Add padding for spacing */
+  overflow: auto; /* Add scroll for long lines */
+  white-space: pre-wrap; /* Allow wrapping of long lines */
+}
